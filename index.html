@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
     <!-- Custom styles for this template -->
     <style type="text/css">
         .my-work {
@@ -180,12 +182,12 @@
         }
 
     </style>
+
 </head>
 
 
 <body>
-
-
+<div class="se-pre-con"></div>
     <section class="starter-page">
         <div class="intro-content">
             <div id="particles-js" class="particles"></div>
@@ -213,7 +215,7 @@
         </div>
     </section>
     <section class="about">
-        <div class="service-heading">
+        <div class="service-heading d-none d-sm-block">
             <div class="typewriter">
                 <h2 class="font-weight-bold text-light text-capitalize ">what can I Do For You?</h2>
             </div>
@@ -266,7 +268,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="about-content">
-                        <h3>Mr.Pradhumna Malakar</h3>
+                        <h3 class="mt-2 ">Mr.Pradhumna Malakar</h3>
                         <p class="blockquote-footer">Web Designer and Developer</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, quasi, expedita ipsam ea, dolores quaerat consequuntur natus, omnis illum commodi culpa eius et fuga molestias. Quis, consequatur, dolorum! Animi, reprehenderit.</p>
                         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempore totam vel, nam in nostrum architecto odio, nemo, dolore asperiores illum! Quidem, eaque fuga necessitatibus nobis rerum atque ad fugit?</span><span>Dignissimos ea consequuntur error cupiditate tempora reprehenderit sequi ipsum saepe quae ex soluta repellendus illo, autem facere, aut perferendis totam. Repellat quos molestias, atque necessitatibus blanditiis vitae quis porro dolorem.</span></p>
@@ -277,7 +279,7 @@
     </section>
     <section class="services">
        		<div class="row">
-       		    <div class="col-sm-12 d-none d-sm-block d-md-none" style="background-color: #161617;">
+       		    <div class="col-sm-12  d-sm-block d-md-none d-lg-none" style="background-color: #161617;">
                       <div class="typewriter-1">
        		        <h2>What can i do for you</h2></div>
        		    </div>
@@ -468,16 +470,6 @@
                             <canvas width="600" height="600" id="myCanvas">
                                 <p></p>
                                 <ul>
-                                    <!--
-   <li><a href=""><img src="images/angularjs.png" width="130px" height="130px"  alt=""></a></li> 
-   <li><a href=""><img src="images/css3.png" width="100px" height="100px" alt=""></a></li> 
-   <li><a href=""><img src="images/bootstrap.png" width="130px" height="130px" alt=""></a></li> 
-   <li><a href=""><img src="images/html.png" width="90px" height="90px" alt=""></a></li> 
-   <li><a href=""><img src="images/mysql_icon.png" width="55px" height="50px" alt=""></a></li> 
-   <li><a href=""><img src="images/php.png" width="60px" height="50px" alt=""></a></li> 
-   <li><a href=""><img src="images/jquery.png" width="50px" height="50px" alt=""></a></li> 
-   <li><a href=""><img src="images/JavaScript.png" width="45px" height="50px" alt=""></a></li> 
--->
                                     <li><a href="">Javascript</a></li>
                                     <li><a href="">Bootstrap</a></li>
                                     <li><a href="">Angular Js</a></li>
@@ -872,7 +864,6 @@
                                 </figcaption>
                             </figure>
                         </div>
-
                         <div class="portfolio all photo col-md-4 col-sm-6" data-cat="app">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/webcraft.png" class="img img-fluid" alt="img03">
@@ -1003,7 +994,12 @@
     <!--	<script src="js/main5.js"></script>-->
     <!--	<script src="js/imagesloaded.pkgd.min.js"></script>-->
     <script src="js/jquery.mixitup.min.js"></script>
-
+<script>
+  $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+    </script> 
 
     <!--
 	<script>
@@ -1081,7 +1077,7 @@
                     pinchZoom: true,
                     freezeDecel: true,
                     fadeIn: 3000,
-                    initial: [0.3, 0.2],
+                    initial: [0.3, -0.01],
                     noSelect: true,
                     maxSpeed: 0.08,
                     textFont: 'Impact,"Arial Black",sans-serif',
