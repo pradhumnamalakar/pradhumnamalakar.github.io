@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
 }
+no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/Preloader_2.gif)  center no-repeat #fff;
+}
 
 section {
     min-height: 450px;
 }
+
 
 .text-turquoise {
     color: #01a5af !important;
@@ -62,13 +74,13 @@ section {
 .left-clip {
     transform: rotate(7deg);
     left: -10px;
-/*    bottom: 0;*/
+    /*    bottom: 0;*/
 }
 
 .right-clip {
     transform: rotate(-7deg);
     right: -11px;
-/*    bottom: 0;*/
+    /*    bottom: 0;*/
 }
 
 .welcome-content {
@@ -198,14 +210,14 @@ section {
 }
 
 .profile-img {
-	width: auto;
-	top: 0;
-	margin: auto;
-	transform: translate(0%, -50%);
-	text-align: center;
+    width: auto;
+    top: 0;
+    margin: auto;
+    transform: translate(0%, -50%);
+    text-align: center;
 }
-.profile-img>img
-{
+
+.profile-img > img {
     box-shadow: 0 3px 20px -12px rgba(0, 0, 0, 0.56), 0 14px 15px 0px rgba(0, 0, 0, 0.12), 0px 8px 21px -9px rgba(0, 0, 0, 0.2);
 }
 
@@ -224,30 +236,36 @@ section {
 }
 
 .social-icon.back {
-	transform: translateY(0px);
-	background-color: #01a5af99;
+    transform: translateY(0px);
+    background-color: #01a5af99;
     visibility: hidden;
 }
 
 .product:hover .social-detail .social-icon.front {
-transform: translateY(55px);visibility: hidden;
+    transform: translateY(55px);
+    visibility: hidden;
 }
 
 .product:hover .social-detail .social-icon.back {
-    transform: translateY(-49px);visibility: visible;
+    transform: translateY(-49px);
+    visibility: visible;
 
 }
 
 .social-icon > a {
-	flex: 1;cursor: pointer;
-	text-align: center;
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
 }
+
 .social-icon > a > img {
-	height: 50px;
+    height: 50px;
 }
+
 .personl-info {
     transform: translate(0%, -70%);
 }
+
 .typo-line {
     display: inline-block;
     position: relative;
@@ -275,9 +293,11 @@ transform: translateY(55px);visibility: hidden;
     margin: auto;
     background-color: #01a5af;
 }
-.typo-line.academics::after
-{    background-color: #037f95;
+
+.typo-line.academics::after {
+    background-color: #037f95;
 }
+
 .services {
     /*			display: none;*/
     /*
@@ -611,11 +631,15 @@ transform: translateY(55px);visibility: hidden;
 }
 
 .myCanvasContainer {
-	margin-top: -50px;
-	display: flex;
-	justify-content: flex-end;
-}.myCanvasContainer>canvas {
-	pointer-events: auto;
+    margin-top: -50px;
+    display: flex;
+    height: auto;
+    justify-content: flex-end;
+}
+
+.myCanvasContainer > canvas {
+    pointer-events: auto;
+    width: auto;
 }
 
 .single-chart {
@@ -721,12 +745,14 @@ transform: translateY(55px);visibility: hidden;
 }
 
 .progress .progress-value div {
-	margin-top: 0px;
-	text-align: center;
-	padding: 10px;
+    margin-top: 0px;
+    text-align: center;
+    padding: 10px;
 }
+
 .progress .progress-value span {
-    font-size: 12px;line-height: 0px;
+    font-size: 12px;
+    line-height: 0px;
     text-transform: uppercase;
 }
 
@@ -891,9 +917,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
     /* top: -40px; */
     border-radius: 10px;
 }
-.blog-2
-    {
-        margin: auto 0;
+
+.blog-2 {
+    margin: auto 0;
 }
 
 .blog-section,
@@ -932,7 +958,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .blog-img {
     width: 200px;
     padding: 12px;
-/*    flex: 1;*/
+    /*    flex: 1;*/
 }
 
 .blog-img > img {
@@ -946,12 +972,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
 }
 
 
-.blog-img>figcaption {
-	margin-top: auto;
+.blog-img > figcaption {
+    margin-top: auto;
 }
+
 .blog-content {
-	margin-top: auto;
+    margin-top: auto;
 }
+
 .blog::before {
     content: '';
     position: absolute;
@@ -1010,8 +1038,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
     background-color: #fff;
     opacity: .85;
 }
-.academic-content
-{margin-top: auto;}
+
+.academic-content {
+    margin-top: auto;
+}
+
 .main-timeline {
     padding-top: 50px;
     position: relative;
@@ -1122,14 +1153,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .main-timeline .timeline:nth-child(2n):after {
     background: #4cad9f;
 }
+
 .filters {
-	cursor: pointer;
-	justify-content: space-between;
-	text-align: match-parent;
+    cursor: pointer;
+    justify-content: space-between;
+    text-align: match-parent;
     margin-top: -50px;
 }
-.filters>li {
-	padding: 5px;
+
+.filters > li {
+    padding: 5px;
 }
 
 /********************
@@ -1188,7 +1221,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
     text-align: center;
 }
 
-.typewriter,.typewriter-1 {
+.typewriter,
+.typewriter-1 {
 
     width: 32%;
     text-align: center;
@@ -1196,8 +1230,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin: 0 auto;
 
 }
-.typewriter-1
-{width: 100%;}
+
+.typewriter-1 {
+    width: 100%;
+}
 
 .typewriter h2,
 .typewriter-1 h2 {
@@ -1212,9 +1248,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
         typing 3.5s steps(20, end),
         blink-caret .5s step-end infinite;
 }
-.typewriter-1 h2{
+
+.typewriter-1 h2 {
     letter-spacing: 0em;
-    
+
 }
 
 /* The typing effect */
@@ -1264,130 +1301,160 @@ Due to the split circle of progress-left and progress right, we must use the ani
     .main-timeline {
         padding-top: 0;
     }
+
     .main-timeline .timeline {
         width: 100%;
         float: none;
         margin: 0 0 -30px 0;
     }
+
     .main-timeline .timeline:before {
         right: auto;
         left: 0;
     }
-    .main-timeline .timeline::before {
-	
-	width: 70px;
-	height: 70px;
-}
-    .main-timeline .timeline::after {
-	width: 50px;
-	
-}
 
-   .main-timeline .timeline::after {
-	right: auto;
-	left: 10px;
-}
+    .main-timeline .timeline::before {
+
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-timeline .timeline::after {
+        width: 50px;
+
+    }
+
+    .main-timeline .timeline::after {
+        right: auto;
+        left: 10px;
+    }
+
     .main-timeline .timeline:nth-child(2n)::after {
-	left: 10px;
-}
+        left: 10px;
+    }
+
     .main-timeline .timeline:nth-child(2n) .year {
-	left: 10px;
-}
-   .main-timeline .timeline-content {
-	padding: 0 30px 40px 41px;
-}
+        left: 10px;
+    }
+
+    .main-timeline .timeline-content {
+        padding: 0 30px 40px 41px;
+    }
+
     .main-timeline .timeline:nth-child(2n) .timeline-content {
-	padding: 0px 9px 40px 66px;
-}
+        padding: 0px 9px 40px 66px;
+    }
+
     .main-timeline .timeline:nth-child(2n) .timeline-content .time-content {
-	transform: translate(0px, 35px);
-}
+        transform: translate(0px, 35px);
+    }
+
     .main-timeline .timeline:last-child .timeline-content {
-	padding-bottom: 35px;
-}
+        padding-bottom: 35px;
+    }
+
     .main-timeline .year {
-	right: auto;
-	left: 10px;font-size: 25px;
-}
+        right: auto;
+        left: 10px;
+        font-size: 25px;
+    }
+
     .time-content {
-	border-radius: 0px 0px 25px 25px;
-	transform: translate(25px, 35px);
-	padding: 0.5rem !important;
-}
-    .time-content>p
-    {font-size: 15px;}
+        border-radius: 0px 0px 25px 25px;
+        transform: translate(25px, 35px);
+        padding: 0.5rem !important;
+    }
+
+    .time-content > p {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
     .starter-page {
         height: 450px;
     }
+
     .left-clip {
         transform: rotate(15deg);
         left: -30px;
         bottom: -90px;
     }
+
     .right-clip {
         transform: rotate(-15deg);
         right: -30px;
         bottom: -90px;
     }
+
     .about {
-	height: 1090px;
-	
-}
-    .service-heading
-    {
+        height: 1090px;
+
+    }
+
+/*
+    .service-heading {
         display: none;
     }
+*/
+
     .about-me {
         margin-top: 0.25rem !important;
     }
-    .about-content
-    {
+
+    .about-content {
         text-align: center;
     }
-    .about-content>h3
-    {
+
+    .about-content > h3 {
         font-size: x-large !important;
-         font-weight: bold; 
+        font-weight: bold;
     }
-    .about-content>p:nth-of-type(1)
-    {
+
+    .about-content > p:nth-of-type(1) {
         text-align: center;
     }
-    .about-content>p
-    {
-        font-size: 15px;text-align: justify;
+
+    .about-content > p {
+        font-size: 15px;
+        text-align: justify;
     }
+
     .wave {
-	top: -143px;
-	height: 160px;	
+        top: -143px;
+        height: 160px;
     }
+
     .wave:nth-of-type(2) {
-	top: -125px;
+        top: -125px;
     }
+
     .welcome-content > h1 {
         text-align: center;
     }
+
     .welcome-content > p {
         font-size: 19px;
         text-align: center;
     }
+
     .welcome-content > h1 > b {
         font-size: smaller;
     }
+
     .profile-card {
         margin-top: 1rem !important;
         padding-bottom: 0rem !important;
     }
+
     .product {
         width: 100%;
     }
-    .work-title
-    {
+
+    .work-title {
         margin-top: 1rem !important;
     }
+
     .work-title > h2 {
         text-align: center;
         font-size: xx-large;
@@ -1397,54 +1464,66 @@ Due to the split circle of progress-left and progress right, we must use the ani
         font-size: large;
         margin-top: 1rem !important;
     }
-    .slider-img-content {	
-	bottom: 50px;
-        
-}.typo-line>h3
-        {
-            font-size: 1.5rem !important;
-        }
-    .ability
-    {flex: 1;}
+    .slider-img-content {
+        bottom: 50px;
+    }
+    .typo-line > h3 {
+        font-size: 1.5rem !important;
+    }
+    .ability {
+        flex: 1;
+    }
     .progress {
-	width: 114px;
-	height: 114px; 
-}.progress .progress-value {
-	font-size: 14px;
-	line-height: 16px;	
-	font-weight: 600;
-}
+        width: 114px;
+        height: 114px;
+    }
+    .progress .progress-value {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+    }
     .myCanvasContainer {
-	margin-top: -30px;
-}
-    .myCanvasContainer>canvas
-    {
-       flex: 1;
-        
-	pointer-events: none;
-    height: 370px;
-/*        margin-right: 0 !important;*/
+        margin-top: -30px;
+        height: 380px;
+    }
+    .myCanvasContainer > canvas {
+        pointer-events: none;
+        width: 100%;
     }
     .blog-img {
-	margin: auto;
-}.blog-img>figcaption {
-	margin-top: -50px;
-}
+        margin: auto;
+    }
+
+    .blog-img > figcaption {
+        margin-top: -50px;
+    }
+
     .blog-content {
-	margin-top: -15px;
-}
-    .blog-heading>p
-    {
+        margin-top: -15px;
+    }
+
+    .blog-heading > p {
         font-size: medium;
     }
-    .blog-2
-    {margin: 3rem 0;}
-    .academic-content
-{margin-top: -3rem;}
+
+    .blog-2 {
+        margin: 3rem 0;
+    }
+
+    .academic-content {
+        margin-top: -3rem;
+    }
+
     .ocean {
-    
-    top: 150px;
-   
+
+        top: 150px;
+
+    }
 }
+
+@media only screen and (max-width: 350px) {
+    .myCanvasContainer {
+        height: 345px;
+    }
 
 }
