@@ -1422,7 +1422,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
        flex: 1;
         
 	pointer-events: none;
-
+    height: 370px;
 /*        margin-right: 0 !important;*/
     }
     .blog-img {
