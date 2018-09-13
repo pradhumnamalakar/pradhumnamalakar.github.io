@@ -1432,7 +1432,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     .blog-img {
         margin: auto;
     }
-
+   
     .blog-img > figcaption {
         margin-top: -50px;
     }
