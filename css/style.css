@@ -1136,7 +1136,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
 	padding: 1px 6px;
 	width: 80px;
 	text-align: center;
-}.bottom-nav >ul>.nav-item>.nav-link>span{
+}.bottom-nav >ul> .nav-item > .nav-link.active {
+	background: gainsboro;
+}
+.bottom-nav >ul>.nav-item>.nav-link>span{
 	display: block;
 }.bottom-nav >ul>.nav-item >.nav-link > img {
 	height: 40px;
