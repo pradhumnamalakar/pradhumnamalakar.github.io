@@ -48,27 +48,17 @@ mywindow.scroll(function () {
     mypos = newscroll;
 });
 }
-// if ( $(window).width() <= 576) {   
-// var mywindow = $(window);
-// //    console.log(mywindow);
-// var mypos = mywindow.scrollTop();
-// var up = false;
-// var newscroll;
-// mywindow.scroll(function () {
-//     newscroll = mywindow.scrollTop();
-//     if (newscroll > mypos && !up) {
-// //        $('.navbar').fadeOut(800);
-//         $('.bottom-navbar').fadeOut(800);
-//         up = !up;
-//         console.log(up);
-//     } else if(newscroll < mypos && up) {
-// //        $('.navbar').stop().fadeIn(400);
-//         $('.bottom-navbar').stop().fadeIn(400);
-//         up = !up;
-//     }
-//     mypos = newscroll;
-// });
-// }
+$('.nav-link').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('.nav-link').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+        var myScrollPos = $('.nav-link.active').offset().left + $('.nav-link.active').outerWidth(true)/2 + $('.navbar-2').scrollLeft() - $('.navbar-2').width()/2;
+        $('.navbar-2').scrollLeft(myScrollPos);
+    });
 
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
