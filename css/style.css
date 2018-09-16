@@ -1137,7 +1137,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 	width: 80px;
 	text-align: center;
 }.bottom-nav >ul> .nav-item > .nav-link.active {
-	background: gainsboro;
+	background: #ededed;
 }
 .bottom-nav >ul>.nav-item>.nav-link>span{
 	display: block;
