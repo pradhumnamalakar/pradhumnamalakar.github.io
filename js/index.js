@@ -48,27 +48,27 @@ mywindow.scroll(function () {
     mypos = newscroll;
 });
 }
-if ( $(window).width() <= 576) {   
-var mywindow = $(window);
-//    console.log(mywindow);
-var mypos = mywindow.scrollTop();
-var up = false;
-var newscroll;
-mywindow.scroll(function () {
-    newscroll = mywindow.scrollTop();
-    if (newscroll > mypos && !up) {
-//        $('.navbar').fadeOut(800);
-        $('.bottom-navbar').fadeOut(800);
-        up = !up;
-        console.log(up);
-    } else if(newscroll < mypos && up) {
-//        $('.navbar').stop().fadeIn(400);
-        $('.bottom-navbar').stop().fadeIn(400);
-        up = !up;
-    }
-    mypos = newscroll;
-});
-}
+// if ( $(window).width() <= 576) {   
+// var mywindow = $(window);
+// //    console.log(mywindow);
+// var mypos = mywindow.scrollTop();
+// var up = false;
+// var newscroll;
+// mywindow.scroll(function () {
+//     newscroll = mywindow.scrollTop();
+//     if (newscroll > mypos && !up) {
+// //        $('.navbar').fadeOut(800);
+//         $('.bottom-navbar').fadeOut(800);
+//         up = !up;
+//         console.log(up);
+//     } else if(newscroll < mypos && up) {
+// //        $('.navbar').stop().fadeIn(400);
+//         $('.bottom-navbar').stop().fadeIn(400);
+//         up = !up;
+//     }
+//     mypos = newscroll;
+// });
+// }
 
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
