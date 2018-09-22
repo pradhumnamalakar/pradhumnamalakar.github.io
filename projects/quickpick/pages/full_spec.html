@@ -1,0 +1,68 @@
+<section>
+    <div class="row">
+        <div class="col-md-4 d-flex align-items-center justify-content-center" style="max-height: 600px;">
+       <div class="for-fullimg text-center p-4">
+        <img src="{{products.imgurl}}" alt="" class="img img-fluid" width="220px" height="auto"></div>
+        </div>
+        <div class="col-md-8">
+        
+        <div class="for-title-detail mt-4">
+        <h2><b>{{products.Title}}</b></h2>
+        <hr>
+        </div>
+        <div class="for-star"> 
+        <sapn class="bg-success p-1 text-white rounded">{{products.Stars}} ★</sapn>
+            <img src="{{products.logo}}" alt="" class="img img-fluid ml-4 mb-1" width="100px">
+        </div>
+        <div class="for-logof">
+        </div>
+        <div class="for-price-detail d-flex">
+        <h1 class="pricers"><b>₹  {{products.price}}</b></h1>
+        <a href="{{products.link}}" class="btn btn-primary ml-5 mr-5 price-btn" target="_blank">Buy Now..</a>
+            </div>
+        <div class="card">
+            <div class="card-body">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" showtab="" id="home-tab" data-toggle="tab" href="#spec" target="_self" data-toggle="tab" role="tab" aria-controls="home" aria-selected="true">Specification</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" showtab="" id="profile-tab" data-toggle="tab" href="#desc" target="_self" data-toggle="tab" role="tab" aria-controls="profile" aria-selected="false">Description</a>
+  </li> 
+  <li class="nav-item">
+    <a class="nav-link"  showtab="" id="contact-tab" data-toggle="tab" href="#review" target="_self" data-toggle="tab" role="tab" aria-controls="contact" aria-selected="false">Reviews</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="spec"  role="tabpanel" aria-labelledby="home-tab">
+      <ul class="list-group">
+          <li class="list-group-item" ng-repeat="s in specs1" >
+              {{s}}
+          </li>
+      </ul>
+  </div>
+  <div class="tab-pane fade" id="desc" role="tabpanel" aria-labelledby="profile-tab">
+       <ul class="list-group">
+          <li class="list-group-item " ng-repeat="d in desc1">
+              {{d}}
+          </li>
+
+      </ul>
+  </div>
+  <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="contact-tab">
+       <ul class="list-group">
+         
+          <li class="list-group-item list-star" ng-repeat="r in review1" >
+            {{r}}
+          </li>
+      </ul>
+  </div>
+</div>
+            </div>
+        </div>
+      
+       
+        </div>
+        </div>
+       
+</section>

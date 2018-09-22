@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Quick Pick</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="vendor/angular/lib/angular1.6.js"></script>
+    <script src="vendor/angular/lib/angular-route.min.js"></script>
+   
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+-->
+     
+     <script src="vendor/angular/lib/ui-bootstrap-custom-tpls-2.5.0.min.js"></script>
+   
+        <!-- Custom styles for this template -->
+    <link href="css/quickpick.css" rel="stylesheet">
+
+  </head>
+
+<body>
+
+    <!-- Navigation -->
+<div ng-include="'includes/logo.html'"></div>
+<div class="d-flex sidebar" >
+       
+        <div ng-include="'includes/sidebar.html'">
+        </div>
+        <div id="content" class="main-div">
+            <div ng-include="'includes/navbar.html'"></div>
+            <div ng-view></div>
+        </div>
+ </div>
+<!--    <section ng-include="'includes/aboutus.html'"></section>-->
+<div ng-include="'includes/contactus.html'"></div>
+<div ng-include="'includes/footer.html'"></div>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/angular/app.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jqzoom.js"></script>
+<!--<script src="vendor/bootstrap/js/bootstrap-slider.js"></script>-->
+<script src="js/quickpick.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#arrow').click(function(){
+        $('#sidebar').toggle('active');
+        $(this).toggleClass('hamburger-anti');
+});});
+    
+</script>
+
+</body>
+
+</html>
