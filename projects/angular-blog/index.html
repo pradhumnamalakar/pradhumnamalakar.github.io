@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>AngularJs -CRUD Application</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/angularjs.png">
+    <link rel="stylesheet" href="css/atelier-lakeside-dark.css">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- ***** Wellcome Area Start ***** -->
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 col-md">        
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand mx-auto" href="#"><img src="img/angularjs.png" class="img img-fluid" alt="" width="95px" height="95px"></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="row h-100 justify-content-center mt-5">
+                <div class="col-12 col-md mt-5">
+                    <div class="wellcome-heading text-center">
+                        <h2>AngularJs App</h2>
+                        <h3>A</h3>
+                        <h4>Crud Application Using AngularJs</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Wellcome Area End ***** -->
+
+    <!-- ***** Special Area Start ***** -->
+    <section class="special-area bg-white section_padding_100" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading Area -->
+                    <div class="section-heading text-center">
+                        <h2>Why Is It Special</h2>
+                        <div class="line-shape"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Single Special Area -->
+                <div class="col-md-12">
+                    <p>
+                        Angular JS is a JavaScript-based open-source front-end web application framework mainly maintained by Google and it is used for building MVC based applications.
+                    </p>
+                    <p>
+                        So,Guys today we make an angular js app which perform crud operation
+                    </p>
+                    <p>We basically perform 4 operations.</p>
+                    <ul class="list-group w-25 first-list">
+                        <li class="list-group-item">1 : Create</li>
+                        <li class="list-group-item">2 : Read</li>
+                        <li class="list-group-item">3 : Update</li>
+                        <li class="list-group-item">4 : Delete</li>
+                    </ul>
+                    <p class="mt-3">We understand each and every topic in breifly as we use them in our Applicaion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Awesome Features Start ***** -->
+    <section class="awesome-feature-area bg-white section_padding_0_50 clearfix" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 class="text-center">This is an image of our application that how it look like.</h5>
+                    <img src="img/Screenshot_2018-09-22%20Starter%20Template%20for%20Bootstrap.png" class="img img-fluid app-image my-5 " alt="">
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Single Feature Start -->
+                <div class="col-md-8 col-sm-8 ">
+                    <h5 class="text-center text-purple">
+                        So,first of all we make our directory structure like that :
+                    </h5>
+                    <ul class="list-group ">
+                        <li class="list-group-item "><p>CSS</p>
+                            <ul class="list-group">
+                                <li class="list-group-item ">bootsrap.min.css</li>
+                                <li class="list-group-item ">style.css</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item"><p>JS</p>
+                            <ul class="list-group">
+                                <li class="list-group-item ">boostrap.min.js</li>
+                                <li class="list-group-item ">index.js</li>
+                                <li class="list-group-item ">jquery.min.js</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item"><p>lib</p>
+                            <ul class="list-group">
+                                <li class="list-group-item ">angular.min.js</li>
+                                <li class="list-group-item"><p>app</p>
+                                    <ul class="list-group">
+                                        <li class="list-group-item ">app.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item"><p>includes</p>
+                            <ul class="list-group">
+                                <li class="list-group-item ">connection.php</li>
+                                <li class="list-group-item ">insert-form.php</li>
+                                <li class="list-group-item ">update-form.php</li>
+                                <li class="list-group-item">select.php</li>
+                                <li class="list-group-item">insert.php</li>
+                                <li class="list-group-item">update.php</li>
+                                <li class="list-group-item">delete.php</li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item disable"><p>index.php</p></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ***** Awesome Features End ***** -->
+    <!-- ***** Cool Facts Area Start ***** -->
+    <section class="cool_facts_area clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Single Cool Fact-->
+                <div class="col-md-12 col-sm-12 mt-5  ">
+                   <div class="single-cool-fact  wow fadeInUp" data-wow-delay="0.2s">
+                    <h5 class="text-purple">For this application we use realtional database <b>MYSQl</b></h5>
+                    <p>We should create database name Employees</p>
+                    <p>Here is the link where you can download dummy database  <a href="emp_details.sql" download>Download</a></p>
+                    <p>So, you import in your database name employee</p>
+                </div>
+                </div>
+                <div class="col-12 col-md-12">
+                    <div class="single-cool-fact wow fadeInUp" data-wow-delay="0.2s">
+                       <p>
+                           Now we are ready to  start our main logic
+                       </p>
+                       <p>
+                           our index.php would be seen like that 
+                       </p>
+                        <pre><code class="html">
+&lt;!Doctype html&gt;
+&lt;html lang="en" ng-app="crud"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt;
+    &lt;meta name="author" content=""&gt;
+    &lt;link rel="icon" href=""&gt;
+    &lt;title&gt;Crud Operation Using AngularJS&lt;/title&gt;
+    &lt;!-- Bootstrap core CSS --&gt;
+    &lt;link rel="stylesheet" href="css/bootstrap.min.css"&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+    &lt;script src="lib/angular1.6.js"&gt;&lt;/script&gt;
+    &lt;script src="lib/ui-bootstrap-custom-tpls-2.5.0.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container wrapper" ng-controller="crudcontroller"&gt;
+        &lt;h1 class="text-center"&gt;AngularJS CRUD Operations &lt;small&gt;&lt;small&gt;&lt;small&gt;with pagination.&lt;/small&gt;&lt;/small&gt;&lt;/small&gt;
+        &lt;/h1&gt;
+        &lt;nav class="navbar navbar-default"&gt;
+            &lt;div class="d-flex" style="width:100%;"&gt;
+                &lt;div class="alert alert-default navbar-brand search-box"&gt;
+                    &lt;button class="btn btn-primary" ng-click="formToggle()"&gt;Add Employee &lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class="alert alert-default input-group search-box"&gt;
+                    &lt;div class="input-group-btn" style="width:100%;"&gt;
+                        &lt;input type="text" class="form-control" placeholder="Search Employee Details from Database..." ng-model="search"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+        &lt;div class="row justify-content-center"&gt;
+            &lt;div class="col-md-6 "&gt; 
+                &lt;div class="text-center" &gt;
+                    &lt;img src="img/giphy.gif" ng-show="loading" alt=""&gt;
+                &lt;/div&gt;
+                &lt;!-- Include insert form to insert data into database --&gt;
+                &lt;div ng-include src="'templates/form.php'" ng-show="show_form"&gt;&lt;/div&gt;
+
+                &lt;!-- Include update form to edit and update data into database --&gt;
+                &lt;div ng-include src="'templates/editform.php'" ng-show="edit_form"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Table to show employee detalis --&gt;
+        &lt;div class="table-responsive"&gt;
+            &lt;table class="table table-hover"&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Sno.&lt;/th&gt;
+                    &lt;th&gt;Emp ID&lt;/th&gt;
+                    &lt;th&gt;Employee Name&lt;/th&gt;
+                    &lt;th&gt;Email Address&lt;/th&gt;
+                    &lt;th&gt;Gender&lt;/th&gt;
+                    &lt;th&gt;Address&lt;/th&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                    &lt;th&gt;&lt;/th&gt;
+                &lt;/tr&gt;
+                &lt;tr ng-repeat="detail in filteredItems| filter:search"&gt;
+                    &lt;td&gt;&lt;span&gt;{{$index+1}}&lt;/span&gt;&lt;/td&gt;
+                    &lt;td&gt;{{detail.emp_id}}&lt;/td&gt;
+                    &lt;td&gt;{{detail.emp_name}}&lt;/td&gt;
+                    &lt;td&gt;{{detail.emp_email}}&lt;/td&gt;
+                    &lt;td&gt;{{detail.emp_gender}}&lt;/td&gt;
+                    &lt;td&gt;{{detail.emp_address}}&lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;button class="btn btn-secondary" ng-click="editinfo(detail)" title="Edit"&gt;Edit&lt;/button&gt;
+                    &lt;/td&gt;
+                    &lt;td&gt;
+                        &lt;button class="btn btn-danger" ng-click="deleteinfo(detail)" title="Delete"&gt;Delete&lt;/button&gt;
+                    &lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+        &lt;/div&gt;
+        &lt;!--  Pagination   --&gt;
+         &lt;div  data-pagination="" data-num-pages="numOfPages()" 
+          data-current-page="curPage" data-max-size="maxSize"  
+          data-boundary-links="true"&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Bootstrap core JavaScript==================================================- -&gt;
+    &lt;!-- Placed at the end of the document so the pages load faster --&gt;
+    &lt;script src="js/crud.js"&gt;&lt;/script&gt;
+    &lt;script src="js/jquery-2.2.4.min.js"&gt;&lt;/script&gt;
+    &lt;script src="js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre> 
+                        <h3>STEP 1</h3>
+                           <h5 class="text-purple">Read From database</h5>
+                        <p>First we create angular module name <b>crud </b>and controller name <b>crudcontroller</b>
+                            </p>
+                            <p>
+                            then we call funtion  <b> get_employee_detail() </b> which get details from select.php using http request then it pass details to $scope.details object 
+                            </p>
+                            <p>our <b>select.php</b> retrive data from database using select query after that we encode it into Json format because angular reads data in json format</p>
+                            <p>We also use here pagination logic and put loder before table until all details would load.which we discuss later in this section.</p>
+                            <pre><code class="html">
+var crud = angular.module("crud", ["ui.bootstrap"]);
+crud.controller('crudcontroller', function ($scope, $http, $log) {
+    
+    function get_employee_detail() {
+        $http.post("includes/empdetail.php")
+            .then(function (response) {
+                $scope.details = response.data;     //pass data into details object
+                //console.log($scope.details);  
+                $scope.curPage = 1,                 //pagination logic
+                $scope.itemsPerPage = 5,
+                $scope.maxSize = 5;
+                $scope.numOfPages = function () {
+                    return Math.ceil($scope.details.length / $scope.itemsPerPage);
+                };
+                $scope.$watch('curPage + numPerPage', function () {
+                    var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
+                        end = begin + $scope.itemsPerPage;
+                    $scope.filteredItems = $scope.details.slice(begin, end);
+                });
+            }, function () {
+                alert('error occured');
+            }).finally(function(){
+              $scope.loading = false;    //loading image dissapear
+        });
+    };
+    get_employee_detail();   // select employee details
+    $scope.loading =true;    //loading image appeaar
+        
+                            </code></pre>
+                            <pre><code class="html">
+&lt;?php
+include('connection.php');
+?&gt;
+&lt;?php
+    $query = "SELECT * FROM emp_details";
+    $result  = mysqli_query($con,$query);
+    $arr  = array();
+        if($result)
+        {
+            while($row = mysqli_fetch_assoc($result))
+            {
+                $arr[] = $row;
+            }
+        }
+    $json = json_encode($arr); //encode into json format
+    echo $json;
+?&gt;
+                            </code></pre>
+                    </div>
+                    <div class="single-cool-fact  wow fadeInUp" data-wow-delay="0.2s">
+                    <h3>STEP 2</h3>
+                    <h5 class="text-purple">Now we have to insert data into our database.</h5>
+                    <p>For these we have to make insert form in  <b>insert.php</b> which we include in our index page using <b>ng-include</b> directive</p>
+                    <pre><code class="html">
+&lt;div class="jumbotron mr-auto mb-4 pt-3 pb-4" id="empform" &gt;
+   &lt;h2 class="text-info"&gt;Register Yourself&lt;/h2&gt;
+    &lt;form  action="" class="form"  ng-submit="insertvalue(emp)" name="myform" &gt; 
+        &lt;div class="form-group "&gt;
+            &lt;label for=""&gt;Name&lt;/label&gt;
+            &lt;input type="text" class="form-control" name="name" ng-model="emp.name" autofocus&gt;
+            &lt;div class="form-group text-danger" ng-show="myform.name.$invalid && myform.fname.$dirty"&gt;
+               Name field is empty
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for=""&gt;Email&lt;/label&gt;
+            &lt;input type="email" class="form-control " name="email" ng-model="emp.email" autofocus &gt;
+            &lt;div class="form-group text-danger" ng-show="myform.email.$invalid && myform.email.$dirty"&gt;
+                Invalid email
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="custom-control custom-radio custom-control-inline mt-2 mb-2 "&gt;
+            &lt;input type="radio" id="customRadioInline1" value="male" name="gender" class="custom-control-input" ng-model="emp.gender"&gt;
+            &lt;label class="custom-control-label" for="customRadioInline1"&gt;Male&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="custom-control custom-radio custom-control-inline mt-2 mb-2"&gt;
+            &lt;input type="radio" id="customRadioInline2" value="female" name="gender" class="custom-control-input"  ng-model="emp.gender"&gt;
+            &lt;label class="custom-control-label" for="customRadioInline2"&gt;Female&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for=""&gt;Address&lt;/label&gt;
+            &lt;textarea name="address" id="" cols="47" rows="1" class="form-control" ng-model="emp.address" autofocus &gt;&lt;/textarea&gt;
+            &lt;div class="form-group" ng-show="myform.address.$invalid && myform.address.$dirty"&gt;Address field is empty&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group mt-3"&gt;
+        &lt;button type="submit" class="btn btn-primary ml-1" ng-disabled="myform.$invalid"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+
+                    </code></pre>
+                    <p>In our form we use <b>ng-submit</b> directive which pass <b>emp</b> as argument to insertvalue() function.</p>
+                    <p>Every input field have <b>ng-model</b> directive which will bind and store data into <b>emp</b>.</p>
+                    <p>We also use angularjs form validation so,that it prevents from empty and invalid data to pass. </p>
+                    <p>In our crud.js we make insertvalue funtion which will sends data to insert.php using http service. </p>
+                    <p> We also hide insert form until we click on add employee button as we click on it form appear</p>
+                    <pre><code class="html">
+        $scope.insertvalue = function (emp) {
+        $scope.message = "";
+        //console.log(emp);
+        var request = $http({
+            method: "post",
+            url: "includes/insert.php",
+            data: {
+                "name": emp.name,
+                "email": emp.email,
+                "gender": emp.gender,
+                "address": emp.address
+            },
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        });
+        request.then(function (response) {
+            $scope.message = "From PHP file : " + response.data;
+            // var x = $scope.message;
+            if (response.data == true) {
+                get_employee_detail();        
+                // Hide details insertion form
+                $scope.show_form = false;     //hide insert form when data is submmitted
+            }
+        });
+       
+    }
+    $scope.show_form = false;            //hide insert form
+    $scope.formToggle = function () {
+        $scope.show_form = $scope.show_form ? false : true;
+    }
+                    </code></pre>
+                    <p>In insert.php we first decode our data using json decode function of php. </p>
+                        <p>After successful insertion of data it returns true as reponse and we again call our <b> get_employee_detail() </b> so,that we get latest update of data </p>
+                    <pre><code class="html">
+&lt;?php
+require_once 'connection.php';
+// Fetch and decode the  data
+$data = json_decode(file_get_contents("php://input"));
+
+$name = mysqli_real_escape_string($con, $data-&gt;name);
+$email = mysqli_real_escape_string($con, $data-&gt;email);
+$gender = mysqli_real_escape_string($con, $data-&gt;gender);
+$address = mysqli_real_escape_string($con, $data-&gt;address);
+
+// mysqli insert query
+$query = "INSERT into emp_details (emp_name,emp_email,emp_gender,emp_address) VALUES ('$name','$email','$gender','$address')";
+// Inserting data into database
+mysqli_query($con, $query);
+echo true;    //returns true 
+?&gt;
+                   </code></pre>
+                    </div>
+                    <div class="single-cool-fact  wow fadeInUp" data-wow-delay="0.2s">
+                    <h3>STEP 3</h3>
+                    <h5 class="text-purple">Now we have to update our data into database</h5>
+                    <p>For these we have to make update form in <b> update.php </b>  Simillarly we include in our index.php using <b> ng-include </b>directive</p>
+                    <pre><code class="html">
+&lt;div class="jumbotron mr-auto mb-4 pt-3 pb-4" id="empform" &gt;
+   &lt;h2 class="text-info"&gt;Edit details&lt;/h2&gt;
+    &lt;form  action="" class="form"  ng-submit="updateform(edit)" name="myform" &gt; 
+        &lt;div class="form-group "&gt;
+            &lt;label for=""&gt;Name&lt;/label&gt;
+            &lt;input type="text" class="form-control" name="name" ng-model="edit.emp_name" value="{{edit.emp_name}}" autofocus&gt;
+            &lt;div class="form-group text-danger" ng-show="myform.name.$invalid && myform.fname.$dirty"&gt;
+               Name field is empty
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for=""&gt;Email&lt;/label&gt;
+            &lt;input type="email" class="form-control "value="{{edit.emp_email}}" name="email" ng-model="edit.emp_email" autofocus &gt;
+            &lt;div class="form-group text-danger" ng-show="myform.email.$invalid && myform.email.$dirty"&gt;
+                Invalid email
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="custom-control custom-radio custom-control-inline mt-2 mb-2 "&gt;
+            &lt;input type="radio" id="customRadioInline1" value="male" name="gender" class="custom-control-input" ng-model="edit.emp_gender"&gt;
+            &lt;label class="custom-control-label" for="customRadioInline1"&gt;Male&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="custom-control custom-radio custom-control-inline mt-2 mb-2"&gt;
+            &lt;input type="radio" id="customRadioInline2" value="female" name="gender" class="custom-control-input"  ng-model="edit.emp_gender"&gt;
+            &lt;label class="custom-control-label" for="customRadioInline2"&gt;Female&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="form-group"&gt;
+            &lt;label for=""&gt;Address&lt;/label&gt;
+            &lt;textarea name="address" id="" cols="47" rows="1" class="form-control" ng-model="edit.emp_address" autofocus value="{{edit.emp_address}}"&gt;&lt;/textarea&gt;
+            &lt;div class="form-group" ng-show="myform.address.$invalid && myform.address.$dirty"&gt;Address field is empty&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="input-group mt-3"&gt;
+        &lt;button type="submit" class="btn btn-primary ml-1" ng-disabled="myform.$invalid"&gt;Submit&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;
+
+                    </code></pre>
+                    <p>When we click on edit button then all information contain in paricular row pass as an argument in editinfo function</p>
+                    <p>then passed argument is stored in new scope property name <b>$scope.edit</b>,which is used during display data on update form.</p>
+                    <p>Simillarly as insert form we make <b> updateform() </b> function which pass <b> edit </b> as   argument to update.php which contain all input field data</p>
+                    <pre><code class="html">
+$scope.edit_form = false;  //hide update form
+    $scope.edit = {};
+    $scope.editinfo = function (emp) { 
+        $scope.edit_form = true;    //when user click on edit button
+        $scope.edit = emp;          // it pass all data from emp to edit object
+        console.log($scope.edit);
+    }
+       $scope.updateform = function (emp) {
+       $http.post("http://localhost/angular_crud/includes/update.php", {
+            "id": emp.emp_id,
+            "name": emp.emp_name,
+            "email": emp.emp_email,
+            "gender": emp.emp_gender,
+            "address": emp.emp_address
+        }).then(function (response) {
+            $scope.msg2 = response.data;
+            if ($scope.msg2 == true) {
+                $scope.edit_form = false;     // hide update form
+            }
+        });
+    }
+
+                    </code></pre>
+                    <p>In update.php we do same operation as insert.php</p>
+                    <pre><code class="html">
+&lt;?php
+require_once 'connection.php';
+$data = json_decode(file_get_contents("php://input")); //json decode
+$id = mysqli_real_escape_string($con, $data-&gt;id);
+$name = mysqli_real_escape_string($con, $data-&gt;name);
+$email = mysqli_real_escape_string($con, $data-&gt;email);
+$gender = mysqli_real_escape_string($con, $data-&gt;gender);
+$address = mysqli_real_escape_string($con, $data-&gt;address);
+// mysqli query to insert the updated data
+$query = "UPDATE emp_details SET emp_name='$name',emp_email='$email',emp_gender='$gender',emp_address='$address' WHERE emp_id=$id";
+mysqli_query($con, $query);
+echo true; //return true
+?&gt;
+                </code></pre>
+                    </div>
+                   <div class="single-cool-fact  wow fadeInUp" data-wow-delay="0.2s">
+                    <h3>STEP 4</h3>
+                    <h5 class="text-purple">Now we have to delete our data from employee table</h5>
+                    <p> When we click on delete button it collects  all data from its row and pass as an argument to a delete function which pass data to <b>delete.php </b></p>
+                    <pre><code class="html">
+     $scope.deleteinfo = function (emp) {
+        $http.post("http://localhost/angular_crud/includes/delete.php", {
+            "id": emp.emp_id
+        }).then(function (response) {
+            $scope.msg3 = response.data;
+            get_employee_detail();
+        });
+    }</code></pre>
+                    <p>In response, it delete row from employee table and again call <b> get_employee_detail() </b> to show remaining rows in employee table. </p>
+                    <pre><code class="html">
+&lt;?php
+include 'connection.php';
+$request = json_decode(file_get_contents("php://input"));
+$id = mysqli_real_escape_string($con,$request-&gt;id);
+$query ="DELETE FROM emp_details where emp_id ='$id'";
+mysqli_query($con,$query);
+echo  "true";    //return true
+?&gt;
+               </code></pre>
+                    </div>
+                     <div class="single-cool-fact  wow fadeInUp" data-wow-delay="0.2s">
+                    <h3>STEP 5</h3>
+                    <h5 class="text-purple">Finishing Touch to our application</h5>
+                   <p>Finally we complete our crud operation but now we apply pagination in our employee table because when table size increases it goes out of the viewport and you have to scoll so long to get employee detail.</p>
+                   <p>So,we are using angularjs pagination directive for bootstrap you can download it from <a href="https://angular-ui.github.io/bootstrap/" target="_blank">https://angular-ui.github.io/bootstrap/</a></p>
+                   <p>As soon as you've got all the files downloaded and included in your page you just need to declare a dependency on the ui.bootstrap module:</p>
+                   <pre><code class="html">    
+&lt;script src="lib/ui-bootstrap-custom-tpls-2.5.0.min.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                    <pre><code class="html">
+var crud = angular.module("crud", ["ui.bootstrap"]);    //inject as a dependency 
+crud.controller('crudcontroller', function ($scope, $http, $log) {
+    
+    function get_employee_detail() {
+        $http.post("includes/empdetail.php")
+            .then(function (response) {
+                $scope.details = response.data;     //pass data into details object
+                //console.log($scope.details);  
+                $scope.curPage = 1,                 //pagination logic
+                $scope.itemsPerPage = 5,
+                $scope.maxSize = 5;
+                $scope.numOfPages = function () {
+                    return Math.ceil($scope.details.length / $scope.itemsPerPage);
+                };
+                $scope.$watch('curPage + numPerPage', function () {
+                    var begin = (($scope.curPage - 1) * $scope.itemsPerPage),
+                        end = begin + $scope.itemsPerPage;
+                    $scope.filteredItems = $scope.details.slice(begin, end);
+                });
+            }, function () {
+                alert('error occured');
+            }).finally(function(){
+              $scope.loading = false;    //loading image dissapear
+        });
+    };
+    get_employee_detail();   // select employee details
+    $scope.loading =true;    //loading image appeaar
+        
+                            </code></pre>
+                    <p>here is the logic for pagination ,in which we set only 5 rows per page</p>
+                    <pre><code class="html">
+&lt;div data-pagination="" data-num-pages="numOfPages()" 
+          data-current-page="curPage" data-max-size="maxSize"  
+          data-boundary-links="true"&gt;
+&lt;/div&gt;</code></pre>
+                   <p>When we retrive our data first time from database.It takes some time to display,which could not look preety good our table show empty rows,to  make it look better we put loader on it,unitl whole data is retrived.</p>
+                   <pre><code class="html">
+&lt;div class="text-center" &gt;
+    &lt;img src="img/giphy.gif" ng-show="loading" alt=""&gt;
+&lt;/div&gt;
+                   </code></pre>
+                   <p>As we declare <b> ng-show </b> attribute loading true in our crud.js and when we get all details then we make it false.</p>
+                    </div>
+                    <h4 class="text-center text-purple"> I hope guys you  enjoy this tutorial and to clarify your doubts you can comment below.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mb-5 pb-cmnt-container"><div class="row">
+            <div class="col-md-12">
+            <h4 class="text-center">Please Share this tutorial so that other may get help and learn from this tutorial</h4>
+        <ul class="mbm_social">
+	<li><a class="social-facebook" href="#">
+		<i class="fa fa-facebook"><small>facebook</small></i>
+		
+		<div class="tooltip"><span>facebook</span></div>
+		</a>
+	</li>
+	<li><a class="social-twitter" href="#">
+		<i class="fa fa-twitter"><small>Twitter</small></i>
+		<div class="tooltip"><span>Twitter</span></div>
+		</a>
+	</li>
+	<li><a class="social-google-plus" href="#">
+		<i class="fa fa-google-plus"><small>google +</small></i>
+		<div class="tooltip"><span>google</span></div>
+		</a>
+	</li>
+	<li><a class="social-linkedin" href="#">
+		<i class="fa fa-linkedin"><small>linkedin</small></i>
+		<div class="tooltip"><span>linkedin</span></div>
+		</a>
+	</li>
+</ul>
+   </div>
+        </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+<!--            <div class="card card-info">-->
+<!--                <div class="card-block">-->
+                    
+                    <form class="mb-5">
+                       
+                        <textarea placeholder="Write your comment here!" class="w-100 rounded-0 form-control pb-cmnt-textarea"></textarea>
+                        <button class="btn btn-primary float-right mt-2 rounded-0 " type="button">Comment</button>
+                    </form>
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+</div>
+    </section>
+    <!-- ***** Cool Facts Area End ***** -->
+    <!-- Jquery-2.2.4 JS -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+<!--    <script src="js/plugins.js"></script>-->
+    <!-- Slick Slider Js-->
+<!--    <script src="js/slick.min.js"></script>-->
+    <!-- Footer Reveal JS -->
+<!--    <script src="js/footer-reveal.min.js"></script>-->
+    <!-- Active JS -->
+<!--    <script src="js/active.js"></script>-->
+    <script src="js/highlight.pack.js"></script>
+<!--	<script src="js/clipbord/clipboard.min.js"></script>-->
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+
+</html>

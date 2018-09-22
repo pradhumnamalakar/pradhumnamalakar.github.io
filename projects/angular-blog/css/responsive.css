@@ -1,0 +1,73 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .wellcome-heading {
+        margin-bottom: 70px;
+    }
+    
+    .section-heading > h2 {
+        font-size: 38px;
+    }
+    
+    .section-heading {
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .welcome_text .cd-intro > p {
+        font-size: 14px;
+    }
+    .wellcome-heading > h2 {
+        font-size: 48px;
+    }
+    
+    .section-heading > h2 {
+        font-size: 32px;
+    }
+    
+    .wellcome-heading > h3 {
+        font-size: 252px;
+        top: -105px;
+        left: -1px;
+    }
+    .wellcome-heading,
+    .single-cool-fact {
+        margin-bottom: 50px;
+    }
+    .cool_facts_area .col-12:last-of-type .single-cool-fact {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .wellcome-heading > h3 {
+        font-size: 284px;
+    }
+    .wellcome-heading > h2 {
+        font-size: 70px;
+    }
+    .welcome-thumb {
+        bottom: -109px;
+        width: 75%;
+    }
+    .wellcome-heading {
+        margin-bottom: 50px;
+    }
+    .wellcome-heading > h3 {
+        top: -139px;
+    }
+   
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .wellcome-heading > h3 {
+        font-size: 286px;
+    }
+   
+}
