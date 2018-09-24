@@ -41,11 +41,11 @@ section {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding: .5rem 1rem;
-}
-.navbar-brand
+}.navbar-brand
 {
     margin-left: 7rem;
 }
+
 .navbar-brand > img {
 	height: 52px;
 	/* width: 38px; */
@@ -62,6 +62,7 @@ section {
 	z-index: -1;
 	transform: rotate(180deg);
 }
+
 .navbar-ocean > .navbar-wave {
     background: url(../images/navbar-ocean001.svg) repeat-x;
     bottom: 20px;
@@ -787,7 +788,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .blog {
     box-shadow: 2px 5px 13px #b3b3b3;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.3s;cursor: pointer;
 }
 
 .blog:hover {
@@ -818,7 +819,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     position: absolute;
     width: 100%;
     height: 4px;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     -webkit-transform-origin: left;
     -moz-transform-origin: left;
@@ -863,7 +864,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
     min-height: 300px;
     background-repeat: no-repeat;
 }
+/*****************************
 
+******************************/
+.portfolio>a
+{
+    outline:none;
+}
 /*****************************
         ACADEMIC
 *****************************/
@@ -1137,9 +1144,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 	width: 80px;
 	text-align: center;
 }.bottom-nav >ul> .nav-item > .nav-link.active {
-	background: #ededed;
-}
-.bottom-nav >ul>.nav-item>.nav-link>span{
+	background: #ededed;;
+}.bottom-nav >ul>.nav-item>.nav-link>span{
 	display: block;
 }.bottom-nav >ul>.nav-item >.nav-link > img {
 	height: 40px;
@@ -1522,6 +1528,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
         width: 100%;
     }
 
+    
     .blog-img {
         margin: auto;
     }
