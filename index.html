@@ -121,6 +121,10 @@
             width: 100%;
             height: 100%;
         }
+        .portfolio figure figcaption>h2>img
+        {
+            width: 50px;height: 50px;
+        }
 
         figure.triangle-effect figcaption::before {
             position: absolute;
@@ -152,19 +156,19 @@
         }
 
         figure.triangle-effect h2 {
-            margin-top: 1em;
+            margin-top: 2em;
             color: rgba(255, 255, 255, 0.77);
             -webkit-transition: transform 0.35s;
             transition: transform 0.35s;
             -webkit-transform: translate3d(0, 40px, 0);
-            transform: translate3d(0, 40px, 0);
+            transform: translate3d(0, 40px, 0);opacity: 0;
         }
 
         figure.triangle-effect:hover h2 {
             -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
             color: rgba(255, 255, 255, 0.87);
-
+opacity: 0.95;
         }
 
         figure.triangle-effect:hover img {
@@ -181,7 +185,7 @@
         }
 
     </style>
-   
+
 </head>
 <body>
 <!--<div class="se-pre-con"></div>-->
@@ -189,7 +193,7 @@
         <div class="intro-content">
             <div id="particles-js" class="particles"></div>
             <div class="container-fluid for-navbar px-0">
-             
+
                <nav class="navbar navbar-expand-lg fixed-top navbar-light">
                   <div class="navbar-ocean">
                     <div class="navbar-wave"></div>
@@ -210,13 +214,10 @@
                         <a class="nav-link" href="#service">My Services</a>
                       </li> <li class="nav-item">
                         <a class="nav-link" href="#skills">My Skills</a>
-                      </li> 
-	
-<!--
+                      </li>
                        <li class="nav-item">
                         <a class="nav-link" href="#blogs">My Blogs</a>
-                      </li> 
--->
+                      </li>
                        <li class="nav-item">
                         <a class="nav-link" href="#academic">My Academics</a>
                       </li> <li class="nav-item">
@@ -227,9 +228,9 @@
                      </ul>
                   </div>
                 </nav>
-            
+
             </div>
-            <div class="container"> 
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6 ">
                         <div class="welcome-content mt-5 ">
@@ -269,7 +270,7 @@
                         <h3 class="mb-0 font-weight-bold">About Me</h3>
                     </div>
                     <p class="blockquote-footer">"I didn,t invent the internet but contributng to make it look good"</p>
-                </div> 
+                </div>
                 <div class="col-md-4">
                     <div class="card wow fadeInUp" style="border:none">
                         <div class="card-body pt-5 pb-3 profile-card mt-5" style="overflow: hidden; ">
@@ -297,7 +298,7 @@
                                         <a href="#" class=""><img src="images/twitter.png" alt="" class="img img-fluid"></a>
                                         <a href="#" class=""><img src="images/linkdin.png" alt="" class="img img-fluid"></a>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -413,7 +414,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6 col-sm-3 ability ">
                                 <div class="progress wow fadeInRight " data-percentage="90">
                                     <span class="progress-left">
@@ -430,7 +431,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md-6  col-sm-3 ability ">
                                 <div class="progress wow fadeInLeft " data-percentage="80">
                                     <span class="progress-left">
@@ -481,7 +482,7 @@
                             </div>
                            <div class="col-md-6 col-sm-3 ability ">
                                 <div class="progress wow fadeInRight" data-percentage="80">
-                                    <span class="progress-left"> 
+                                    <span class="progress-left">
                                         <span class="progress-bar"></span>
                                     </span>
                                     <span class="progress-right">
@@ -494,7 +495,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                             
+                            </div>
                                 <div class="col-md-12 d-none  mt-2">
                                <div class="element"></div>
                                 <p class="text-muted text-justify">Main area of my expertise is front end  development and everything related with this side of web.&nbsp; &nbsp;HTML,CSS, JS (ES5,ES6), building small &amp; medium Web Apps, AngularJs , building custom plugins, features, animations and just coding layouts.</p>
@@ -505,7 +506,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 ">
-                        <div id="myCanvasContainer" class="myCanvasContainer"> 
+                        <div id="myCanvasContainer" class="myCanvasContainer">
                             <canvas width="600" height="600" class="wow zoomIn" id="myCanvas">
                                 <p></p>
                                 <ul>
@@ -534,7 +535,7 @@
             </div>
         </div>
     </section>
-   <!-- <section class="blog-section" id="blogs">
+    <section class="blog-section" id="blogs">
         <div class="container">
             <div class="row">
                 <div class="col-md-12  text-center">
@@ -557,10 +558,10 @@
                         </figure>
                         <div class="blog-content p-3 col-sm-8">
                             <div class="blog-heading text-center">
-                                <p class="lead font-weight-bold">Making CRUD appliation using Angularjs and Nodejs</p>
+                                <p class="lead font-weight-bold">Making CRUD appliation using Angularjs and </p>
                             </div>
                             <hr>
-                            <p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed accusamus vel officiis ratione, voluptatibus quae quos ut ab laboriosam est, molestias doloremque pariatur earum quia expedita! Ut facere, velit similique.</p>
+                            <p class="text-muted text-justify">Angular JS is a JavaScript framework used for building MVC based applications. In this tutotrial  we have learn how to  make angularjs crud application using angularJs and PHP step by step.</p>
                         </div>
                     </div>
                 </div>
@@ -570,23 +571,23 @@
                             <figcaption>
                                 <div class="date d-flex justify-content-around align-items-center border-top border-bottom">
                                     <img src="images/16347-200.png" alt="" class="img-fluid float-left img" width="30" height="30">
-                                    <span>16-07-2018</span>
+                                    <span>24-08-2018</span>
                                 </div>
                             </figcaption>
                         </figure>
                         <div class="blog-content p-3 col-sm-8">
                             <div class="blog-heading text-center">
-                            <p class="lead font-weight-bold">Making CRUD appliation using Angularjs and Nodejs
+                            <p class="lead font-weight-bold">Key to success for a front-end developer. 
                             </p>
                             </div>
                             <hr>
-                            <p class="text-muted text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed accusamus vel officiis ratione, voluptatibus quae quos ut ab laboriosam est, molestias doloremque pariatur earum quia expedita! Ut facere, velit similique.</p>
+                            <p class="text-muted text-justify">Hello,i want to share you a list of important website which you must visit to became a proficeint front-end developer and they always help to solve any type of your designing problems. </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="personal-detail" id="academic">
              <div class="container">
             <div class="row">
@@ -663,52 +664,63 @@
                 <div class="col-md-12 mb-5">
                     <div id="portfoliolist" class="row">
                         <div class="portfolio wow zoomIn all web angular col-md-4 col-sm-6" data-cat="logo">
+                            <a href="http://ecampus.pradhumna.me/">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/service0001.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
                             </figure>
+                            </a>
                         </div>
                         <div class="portfolio wow zoomIn all app web col-md-4 col-sm-6" data-cat="card">
+                           <a href="https://ecampusips.in/">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/service00002.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
                             </figure>
+                            </a>
                         </div>
                         <div class="portfolio wow zoomIn all photo col-md-4 col-sm-6" data-cat="web">
+                          <a href="projects/quickpick/index.html">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img  src="images/service003.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
                             </figure>
+                            </a>
                         </div>
                         <div class="portfolio wow zoomIn all photo col-md-4 col-sm-6" data-cat="app">
+                        <a href="projects/webcraft/index.html">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/webcraft.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
-                            </figure>
+                            </figure></a>
                         </div>
                         <div class="portfolio wow zoomIn all app col-md-4 col-sm-6" data-cat="card">
-                            <figure class="triangle-effect portfolio-wrapper">
+                          <a href="http://crud.pradhumna.me">
+                                <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/angular-crud-min.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
                             </figure>
+                          </a>
                         </div>
-                        <div class="portfolio wow zoomIn all photo col-md-4 col-sm-6" data-cat="logo">
+                        <div class="portfolio wow zoomIn all photo angular col-md-4 col-sm-6" data-cat="logo">
+                           <a href="http://pb.pradhumna.me/">
                             <figure class="triangle-effect portfolio-wrapper">
                                 <img src="images/purplebloods001.png" class="img img-fluid" alt="img03">
                                 <figcaption>
-<!--                                    <h2>Pradhumna</h2>-->
+                                    <h2><img src="images/svg/eye.svg" alt=""></h2>
                                 </figcaption>
                             </figure>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -746,7 +758,7 @@
                         </div>
                         <div class="contact-detail border  p-2 m-2 text-center">
                             <a class="btn bg-light rounded-0 text-secondary" href="resume/PRADHUMNA%20MALAKAR.pdf"  download>Download Resume</a>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 my-5">
@@ -799,67 +811,19 @@
          <li class="nav-item"><a class="nav-link" href="#about"><img src="images/svg/about.svg" class="img img-fluid" alt=""><span>About Me</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#service"><img src="images/svg/services.svg" class="img img-fluid" alt=""><span>My Services</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#skills"><img src="images/svg/Skills.svg" class="img img-fluid" alt=""><span>My Skills</span></a></li>
-<!--          <li class="nav-item"><a class="nav-link" href="#blogs"><img src="images/svg/blog.svg" class="img img-fluid" alt=""><span>My Blogs</span></a></li>-->
+          <li class="nav-item"><a class="nav-link" href="#blogs"><img src="images/svg/blog.svg" class="img img-fluid" alt=""><span>My Blogs</span></a></li>
            <li class="nav-item"> <a class="nav-link" href="#academic"><img src="images/svg/Academics.svg" class="img img-fluid" alt=""><span>My Academic</span></a></li>
          <li class="nav-item"><a class="nav-link" href="#work"><img src="images/svg/work.svg" class="img img-fluid" alt=""><span>My Work</span></a></li>
           <li class="nav-item"><a class="nav-link" href="#contact"><img src="images/svg/contact_me.svg" class="img img-fluid" alt=""><span>Contact Me</span></a></li></ul>
         </div>
     </nav>
-      <div class="">
-<!--
-       <nav class="nav">
-       <a class="nav-link active" href="#">Home</a>
-       <a class="nav-link" href="#">About Me</a>
-       <a class="nav-link" href="#">My Services</a>
-       <a class="nav-link" href="#">My Skills</a>
-       <a class="nav-link" href="#">My Blogs</a>
-       <a class="nav-link" href="#">My Academic</a>
-       <a class="nav-link" href="#">My Work</a>
-       <a class="nav-link" href="#">Contact Me</a>
-   </nav>
-   
--->
-   </div>
-<!--
-        <nav class="navbar navbar-dark bg-dark">
-       <a class="navbar-brand" href="#">Never expand</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarsExample01">
-           <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item">
-                   <a class="nav-link disabled" href="#">Disabled</a>
-               </li>
-               <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                   <div class="dropdown-menu" aria-labelledby="dropdown01">
-                       <a class="dropdown-item" href="#">Action</a>
-                       <a class="dropdown-item" href="#">Another action</a>
-                       <a class="dropdown-item" href="#">Something else here</a>
-                   </div>
-               </li>
-           </ul>
-           <form class="form-inline my-2 my-md-0">
-               <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-           </form>
-       </div>
-   </nav>
-   
--->
      </section>
    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
     <script src="js/wow.min.js"></script>
@@ -874,7 +838,7 @@
 		var $anchor = $(this);
 //        alert("boss");
 		$('html, body').stop().animate({
- 
+
 			scrollTop: $($anchor.attr('href')).offset().top
 		}, 1500);
 		event.preventDefault();
@@ -926,7 +890,7 @@
                     zoomMin: 1,
                     freezeActive: true,
                     shuffleTags: true,
-                    shape: 'sphere', 
+                    shape: 'sphere',
                     pinchZoom: true,
                     freezeDecel: true,
                     fadeIn: 3000,
