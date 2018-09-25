@@ -19,7 +19,7 @@
 
            .navigationDiv {
                position: fixed;
-               background: -moz-linear-gradient(#393838, #202324, #06060b);
+               background: linear-gradient(#393838, #202324, #06060b);
                width: 100%;
                top: 0;
                height: 45px;
@@ -170,7 +170,7 @@
 
            .footer {
                color: white;
-               background: -moz-linear-gradient(#393838, #202324, #06060b);
+               background: linear-gradient(#393838, #202324, #06060b);
                text-align: center;
                padding: 10px;
                height: 70px;
