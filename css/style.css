@@ -102,18 +102,18 @@ section {
 .right-clip {
     position: absolute;
     width: 100%;
-    height: 100px;
+    height: 125px;
     background-color: #fff;
-    bottom: -100px;
+    bottom: -125px;
 }
 
 .left-clip {
-    transform: rotate(7deg);
+    transform: rotate(6deg);
     left: -10px;
 }
 
 .right-clip {
-    transform: rotate(-7deg);
+    transform: rotate(-6deg);
     right: -11px;
 }
 
@@ -253,10 +253,12 @@ section {
 
 .profile-img > img {
     box-shadow: 0 3px 20px -12px rgba(0, 0, 0, 0.56), 0 14px 15px 0px rgba(0, 0, 0, 0.12), 0px 8px 21px -9px rgba(0, 0, 0, 0.2);
+    width: 177px;
 }
 
 .social-detail {
     transform: translateY(-109px);
+    z-index: 1111;
 }
 
 .social-icon {
