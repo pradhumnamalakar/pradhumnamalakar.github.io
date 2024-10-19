@@ -119,6 +119,7 @@ section {
 
 .welcome-content {
     color: #fff;
+    margin-top: 4rem;
 }
 
 .welcome-content > h1 {
@@ -130,7 +131,7 @@ section {
 }
 
 .welcome-content > p {
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .welcome-content > p > a {
@@ -342,7 +343,7 @@ section {
 
 .about {
     overflow: hidden;
-    height: 625px;
+    height: 825px;
     align-items: center;
     position: relative;
 }
@@ -1461,7 +1462,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     }
 
     .welcome-content > p {
-        font-size: 19px;
+        font-size: 18px;
         text-align: center;
     }
 
