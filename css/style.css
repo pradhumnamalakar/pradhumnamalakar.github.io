@@ -19,55 +19,63 @@ section {
     background-repeat: no-repeat;
     height: 620px;
 }
-.for-navbar
-{height: 60px;}
+
+.for-navbar {
+    height: 60px;
+}
+
 .main-nav {}
-.main-nav > li {
+
+.main-nav>li {
     font-size: 15px;
     font-weight: 600;
     padding-right: 10px;
-} 
-.nav-link {
-	color: #01828a !important;
 }
+
+.nav-link {
+    color: #01828a !important;
+}
+
 .navbar-2 {
-/*	position: relative;*/
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-ms-flex-align: center;
-	align-items: center;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	padding: .5rem 1rem;
-}.navbar-brand
-{
+    /*	position: relative;*/
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.navbar-brand {
     margin-left: 7rem;
 }
 
-.navbar-brand > img {
-	height: 52px;
-	/* width: 38px; */
-	transform: translateY(5px) scale(1.4);
-}
- .navbar-ocean {
-	background: #fff;
-	height: 60px;
-	width: 100%;
-	position: absolute;
-	top: -22px;
-	left: 0;
-	content: "";
-	z-index: -1;
-	transform: rotate(180deg);
+.navbar-brand>img {
+    height: 52px;
+    /* width: 38px; */
+    transform: translateY(5px) scale(1.4);
 }
 
-.navbar-ocean > .navbar-wave {
+.navbar-ocean {
+    background: #fff;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: -22px;
+    left: 0;
+    content: "";
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.navbar-ocean>.navbar-wave {
     background: url(../images/navbar-ocean001.svg) repeat-x;
     bottom: 20px;
     content: "";
-/*    background: url(../images/vector.svg) repeat-x;*/
+    /*    background: url(../images/vector.svg) repeat-x;*/
     position: absolute;
     top: -198px;
     width: 6400px;
@@ -76,7 +84,7 @@ section {
     transform: translate3d(0, 0, 0);
 }
 
-.navbar-ocean > .navbar-wave:nth-of-type(2) {
+.navbar-ocean>.navbar-wave:nth-of-type(2) {
     bottom: 0;
     /*    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;*/
     opacity: 1;
@@ -122,19 +130,19 @@ section {
     margin-top: 4rem;
 }
 
-.welcome-content > h1 {
+.welcome-content>h1 {
     text-align: inherit;
 }
 
-.welcome-content > h1 > b {
+.welcome-content>h1>b {
     font-size: inherit;
 }
 
-.welcome-content > p {
+.welcome-content>p {
     font-size: 21px;
 }
 
-.welcome-content > p > a {
+.welcome-content>p>a {
     color: #fff;
 
 }
@@ -252,7 +260,7 @@ section {
     text-align: center;
 }
 
-.profile-img > img {
+.profile-img>img {
     box-shadow: 0 3px 20px -12px rgba(0, 0, 0, 0.56), 0 14px 15px 0px rgba(0, 0, 0, 0.12), 0px 8px 21px -9px rgba(0, 0, 0, 0.2);
     width: 177px;
 }
@@ -289,13 +297,13 @@ section {
 
 }
 
-.social-icon > a {
+.social-icon>a {
     flex: 1;
     cursor: pointer;
     text-align: center;
 }
 
-.social-icon > a > img {
+.social-icon>a>img {
     height: 50px;
 }
 
@@ -352,7 +360,7 @@ section {
     margin-top: auto;
 }
 
-.about > .service-ocean {
+.about>.service-ocean {
     background: #161617;
     height: auto;
     width: auto;
@@ -363,12 +371,12 @@ section {
     z-index: -1;
 }
 
-.about > .service-ocean > .wave {
+.about>.service-ocean>.wave {
     background: url(../images/black.svg) repeat-x;
     bottom: 20px;
 }
 
-.about > .service-ocean > .wave:nth-of-type(2) {
+.about>.service-ocean>.wave:nth-of-type(2) {
     bottom: 0;
     /*    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;*/
     opacity: 1;
@@ -480,7 +488,7 @@ section {
     justify-content: flex-end;
 }
 
-.myCanvasContainer > canvas {
+.myCanvasContainer>canvas {
     pointer-events: auto;
     width: auto;
 }
@@ -528,7 +536,7 @@ section {
     left: 0;
 }
 
-.progress > span {
+.progress>span {
     width: 50%;
     height: 100%;
     overflow: hidden;
@@ -746,6 +754,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-bottom: 1em;
 }
 
+.work-title {
+    margin-top: 5rem !important;
+}
+
 /***************************
             BLOG
 ***************************/
@@ -771,7 +783,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     position: relative;
 }
 
-.blog-section > .container {
+.blog-section>.container {
     transform-style: preserve-3d;
     transform: translateZ(3px);
 }
@@ -791,7 +803,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .blog {
     box-shadow: 2px 5px 13px #b3b3b3;
     position: relative;
-    transition: all 0.3s;cursor: pointer;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .blog:hover {
@@ -803,13 +816,13 @@ Due to the split circle of progress-left and progress right, we must use the ani
     padding: 12px;
 }
 
-.blog-img > img {
+.blog-img>img {
     transform: translate(0%, -30%);
     border-radius: 5px;
     height: 170px;
 }
 
-.blog-img > figcaption {
+.blog-img>figcaption {
     margin-top: auto;
 }
 
@@ -867,13 +880,14 @@ Due to the split circle of progress-left and progress right, we must use the ani
     min-height: 300px;
     background-repeat: no-repeat;
 }
+
 /*****************************
 
 ******************************/
-.portfolio>a
-{
-    outline:none;
+.portfolio>a {
+    outline: none;
 }
+
 /*****************************
         ACADEMIC
 *****************************/
@@ -1004,7 +1018,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     margin-top: -50px;
 }
 
-.filters > li {
+.filters>li {
     padding: 5px;
 }
 
@@ -1012,10 +1026,10 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
 ************************/
 .slider {
-    height: 450px;
+    height: 540px;
 }
 
-.slider > .carousel-item {
+.slider>.carousel-item {
     height: 100%;
     background: #161617;
 }
@@ -1027,7 +1041,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     z-index: -1;
 }
 
-.slider > .carousel-item.active .slider-img > img {
+.slider>.carousel-item.active .slider-img>img {
     animation: slide 5s linear alternate infinite;
 }
 
@@ -1086,7 +1100,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
     border-right: .15em solid white;
     white-space: nowrap;
     margin: 0 auto;
-/*    letter-spacing: .08em;*/
+    /*    letter-spacing: .08em;*/
     animation:
         typing 3.5s steps(20, end),
         blink-caret .5s step-end infinite;
@@ -1125,36 +1139,48 @@ Due to the split circle of progress-left and progress right, we must use the ani
 .carousel-control-prev {
     width: 5%;
 }
+
 /*****************************
         BOTTOM NAVBAR
 *****************************/
-.bottom-navbar
-{
+.bottom-navbar {
     display: none;
     min-height: 50px;
 }
+
 .bottom-nav {
-	overflow-x: scroll;
-	height: 60px;
-	display: inline-flex;
-	justify-content: space-between;
-}.bottom-nav>ul>.nav-item{
-	list-style: none;
+    overflow-x: scroll;
+    height: 60px;
+    display: inline-flex;
+    justify-content: space-between;
 }
-.bottom-nav >ul> .nav-item > .nav-link {
-	font-size: 11px;
-	padding: 1px 6px;
-	width: 80px;
-	text-align: center;
-}.bottom-nav >ul> .nav-item > .nav-link.active {
-	background: #ededed;;
-}.bottom-nav >ul>.nav-item>.nav-link>span{
-	display: block;
-}.bottom-nav >ul>.nav-item >.nav-link > img {
-	height: 40px;
-	object-fit: contain;
-	padding: 5px;
+
+.bottom-nav>ul>.nav-item {
+    list-style: none;
 }
+
+.bottom-nav>ul>.nav-item>.nav-link {
+    font-size: 11px;
+    padding: 1px 6px;
+    width: 80px;
+    text-align: center;
+}
+
+.bottom-nav>ul>.nav-item>.nav-link.active {
+    background: #ededed;
+    ;
+}
+
+.bottom-nav>ul>.nav-item>.nav-link>span {
+    display: block;
+}
+
+.bottom-nav>ul>.nav-item>.nav-link>img {
+    height: 40px;
+    object-fit: contain;
+    padding: 5px;
+}
+
 /******************************
             WOW CSS
 *******************************/
@@ -1390,7 +1416,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
         padding: 0.5rem !important;
     }
 
-    .time-content > p {
+    .time-content>p {
         font-size: 15px;
     }
 }
@@ -1399,10 +1425,11 @@ Due to the split circle of progress-left and progress right, we must use the ani
     .starter-page {
         height: 450px;
     }
-    .for-navbar
-    {
+
+    .for-navbar {
         display: none;
     }
+
     .left-clip {
         transform: rotate(15deg);
         left: -30px;
@@ -1416,15 +1443,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
     }
 
     .about {
-        height: 1090px;
+        height: 1180px;
 
     }
-
-    /*
-    .service-heading {
-        display: none;
-    }
-*/
 
     .about-me {
         margin-top: 0.25rem !important;
@@ -1434,16 +1455,16 @@ Due to the split circle of progress-left and progress right, we must use the ani
         text-align: center;
     }
 
-    .about-content > h3 {
+    .about-content>h3 {
         font-size: x-large !important;
         font-weight: bold;
     }
 
-    .about-content > p:nth-of-type(1) {
+    .about-content>p:nth-of-type(1) {
         text-align: center;
     }
 
-    .about-content > p {
+    .about-content>p {
         font-size: 15px;
         text-align: justify;
     }
@@ -1457,16 +1478,21 @@ Due to the split circle of progress-left and progress right, we must use the ani
         top: -125px;
     }
 
-    .welcome-content > h1 {
-        text-align: center;
+    .welcome-content {
+        margin-top: 0rem !important;
     }
 
-    .welcome-content > p {
+    .welcome-content>h1 {
+        text-align: center;
+        margin-top: 0rem !important;
+    }
+
+    .welcome-content>p {
         font-size: 18px;
         text-align: center;
     }
 
-    .welcome-content > h1 > b {
+    .welcome-content>h1>b {
         font-size: smaller;
     }
 
@@ -1483,26 +1509,27 @@ Due to the split circle of progress-left and progress right, we must use the ani
         margin-top: 1rem !important;
     }
 
-    .work-title > h2 {
+    .work-title>h2 {
         text-align: center;
         font-size: xx-large;
     }
 
-    .work-title > p {
+    .work-title>p {
         text-align: center;
         font-size: large;
         margin-top: 1rem !important;
     }
 
     .slider-img-content {
-        bottom: 50px;
-    }
-    .slider-img {
-	width: 75%;
-	margin: auto;
+        bottom: 125px;
     }
 
-    .typo-line > h3 {
+    .slider-img {
+        width: 75%;
+        margin: auto;
+    }
+
+    .typo-line>h3 {
         font-size: 1.5rem !important;
     }
 
@@ -1526,17 +1553,17 @@ Due to the split circle of progress-left and progress right, we must use the ani
         height: 380px;
     }
 
-    .myCanvasContainer > canvas {
+    .myCanvasContainer>canvas {
         pointer-events: none;
         width: 100%;
     }
 
-    
+
     .blog-img {
         margin: auto;
     }
 
-    .blog-img > figcaption {
+    .blog-img>figcaption {
         margin-top: -50px;
     }
 
@@ -1544,7 +1571,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
         margin-top: -15px;
     }
 
-    .blog-heading > p {
+    .blog-heading>p {
         font-size: medium;
     }
 
@@ -1560,8 +1587,8 @@ Due to the split circle of progress-left and progress right, we must use the ani
 
         top: 150px;
     }
-    .bottom-navbar
-    {
+
+    .bottom-navbar {
         display: block;
     }
 }
@@ -1570,8 +1597,9 @@ Due to the split circle of progress-left and progress right, we must use the ani
     .myCanvasContainer {
         height: 345px;
     }
-.slider-img {
-	width: 100%;
-/*	margin: auto;*/
-}
+
+    .slider-img {
+        width: 100%;
+        /*	margin: auto;*/
+    }
 }
