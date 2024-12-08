@@ -806,29 +806,30 @@
                     </div>
                 </div>
                 <div class="col-md-6 my-5">
-                    <form class="wow fadeInRight">
+                    <form class="wow fadeInRight" id="contact-form">
                         <fieldset class="form-group">
-                            <label for="fullname1">Full Name</label>
-                            <input type="text" class="form-control rounded-0" id="fullname1"
-                                placeholder="First-name Last-name">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control rounded-0" id="fullname"
+                                placeholder="First-name Last-name" maxlength="256" required>
                         </fieldset>
                         <fieldset class="form-group">
-                            <label for="email1">Email address</label>
-                            <input type="email" class="form-control rounded-0" id="email1" placeholder="Enter email">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control rounded-0" id="email"
+                                pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" placeholder="Enter email" required>
                         </fieldset>
                         <fieldset class="form-group">
-                            <label for="service1">Select a service</label>
-                            <select class="form-control rounded-0" id="service1">
-                                <option>Web Design & Development</option>
-                                <option>Domain and Hosting</option>
-                                <option>Web Application</option>
-                                <option>Mobile Application</option>
-                                <option>WordPress Support</option>
-                            </select>
+                            <label for="contact no">Phone Number (Optional):</label>
+                            <input type="tel" class="form-control rounded-0" id="mobile"
+                                placeholder="Please enter your contact no." maxlength="15"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                            <span id="mobile-error" style="display: none;">Please enter a valid phone number.</span>
                         </fieldset>
                         <fieldset class="form-group">
                             <label for="message1">Your Message</label>
-                            <textarea class="form-control rounded-0" id="message1" rows="3"></textarea>
+                            <textarea class="form-control rounded-0" id="message" rows="3"
+                                placeholder="Enter your message or inquiry here..."
+                                maxlength="2000"
+                                required></textarea>
                         </fieldset>
                         <div class="d-flex justify-content-center">
                             <button type="submit" class="btn bg-light rounded-0 text-secondary">Submit</button>
@@ -885,6 +886,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
         integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/particles.js"></script>
